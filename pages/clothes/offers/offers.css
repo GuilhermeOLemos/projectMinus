@@ -1,0 +1,7 @@
+@import url(/styles/var.css);
+@import url(/styles/components.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}

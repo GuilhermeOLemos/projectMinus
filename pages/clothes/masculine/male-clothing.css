@@ -1,0 +1,19 @@
+@import url(/styles/var.css);
+@import url(/styles/components.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/**Sections*/
+/*first-section*/
+#first-section {
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+
+    overflow: hidden;
+    background: center / cover no-repeat url(/images/main-imgs/male-page.jpg) fixed;
+}

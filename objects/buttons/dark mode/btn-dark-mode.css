@@ -1,0 +1,68 @@
+@import url(/styles/var.css);
+
+:root {
+    margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+label {
+    height: 30px;
+    width: 60px;
+
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 3px;
+
+    background: var(--color-offwhite);
+    border: none;
+    border-radius: 25px;
+    box-shadow: inset 1px 1px 2px var(--color-shadow);
+}
+
+div{
+    width:58px;
+    
+    display: flex;
+    position: absolute;
+    left: 11px;
+    
+    align-self: center;
+    justify-self: center;
+    justify-content: space-evenly;
+
+    color: var(--color-shadow);
+}
+
+a {
+    height: 26px;
+    width: 26px;
+
+    position: relative;
+
+    background: var(--color-darkgrey);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px var(--color-shadow);
+    backdrop-filter: blur(5px);
+
+    transition: 1s;
+}
+
+a:active {
+    animation: ease-in-out 0.3s normal;
+}
+
+@keyframes darkAnimation {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 38px;
+    }
+}

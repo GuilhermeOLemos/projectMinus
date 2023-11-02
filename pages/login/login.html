@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar/Criar conta</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <a id="return-temp" href="/index.html" target="_self"><</a>
+
+            <!-- form login -->
+            <div class="form-box" id="login-box">
+                <h1>Acessar conta</h1>
+                <!-- <form action="" method="post"> -->
+                    <input class="input-style input-login" type="email" name="email" id="login-email" placeholder="email/usuário">
+                    <input class="input-style input-login" type="password" name="password" id="login--password" placeholder="senha">
+                    <button class="button-style glass-button" id="login-button">Entrar</button>
+                <!-- </form> -->
+                <span>
+                    <a class="link">não possui conta?</a>|<a href="" class="link">esqueceu a senha?</a>
+                </span>
+            </div>
+
+            <!-- form register -->
+            <div class="form-box" id="register-box">
+                <h1>Criar conta</h1>
+                <!-- <form action="" method="post"> -->
+                    <input class="input-style input-register" type="text" name="" id="register-name" placeholder="nome">
+                    <input class="input-style input-register" type="email" name="" id="register-email"
+                        placeholder="email">
+                    <input class="input-style input-register" type="email" name="" id="register-confirmemail"
+                        placeholder="confirme o email">
+                    <input class="input-style input-register" type="password" name="" id="register-pass"
+                        placeholder="senha">
+                    <input class="input-style input-register" type="password" name="" id="register-confirmpass"
+                        placeholder="confirme a senha">
+                    <button class="button-style glass-button" id="register-button">Registrar-se</button>
+                <!-- </form> -->
+                <span>
+                    <a class="link">já possui conta?</a>
+                </span>
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>

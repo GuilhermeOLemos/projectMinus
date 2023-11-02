@@ -1,0 +1,51 @@
+<head>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <label for="input-dark-mode">
+        <div>
+            <span class="material-symbols-outlined">
+                light_mode
+            </span>
+            <span class="material-symbols-outlined">
+                dark_mode
+            </span>
+        </div>
+        <a id="btn"></a>
+    </label>
+    <input type="checkbox" id="input-dark-mode"></input>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        var whatClick = 0
+
+        $('label').on('click', function active() {
+            const dark = () => {
+                $('a').css(
+                    {
+                        'margin-left': '26px',
+                        'background-color': 'var(--color-yellow)'
+                    })
+            }
+            const light = () => {
+                $('a').css(
+                    {
+                        'margin-left': '0px',
+                        'background-color': 'var(--color-darkgrey)'
+                    })
+            }
+
+
+            if (whatClick == 0) {
+                dark()
+                whatClick++
+            }
+            else {
+                light()
+                whatClick--
+            }
+        })
+    </script>
+</body>
